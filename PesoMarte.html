@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mi peso en un lugar </title>
+    
+        <style>
+    
+         </style>
+    </head>
+
+    <body>
+
+        <h1>Mi peso en Marte</h1>
+
+       
+
+        <script>
+            var usuario = prompt("Cual es tu peso?");
+            var planeta = parseInt(prompt("Elige tu planeta \n 1 es marte\n 2 es jupiter"));
+            
+            var peso = parseInt(usuario);
+
+            var g_tierra = 9.8;
+            var g_marte = 3.7;
+            var g_jupiter = 24.8;            
+            var peso_final;
+            var lugar;
+
+            if(planeta == 1)
+            {
+                peso_final = peso * g_marte / g_tierra;
+                lugar = "marte";
+            }
+            else if(planeta ==2)
+            {
+                peso_final = peso * g_jupiter / g_tierra;
+                lugar = "jupiter";
+            }
+            else{
+                peso_final = ("no Es valido");
+                lugar = "nuncajamas";
+            }
+            
+            peso_final = parseInt(peso_final);
+
+            document.write("Tu peso en \n" +  lugar  + " es <strong>" + peso_final + "Kilos </strong>");
+
+
+        </script>
+    </body>
+
+</html>

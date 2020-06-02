@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        
+        <meta charset="uft-8" />
+         <!-- comentario para Html-->
+        <title> Document Object Model </title>
+    </head>
+    <body>
+        <h1>Vamos a jugar con window y Document</h1>
+        <script type="text/javascript">
+
+       var ahora = new Date();
+        console.log( ahora );
+        console.log( ahora.getHours() ); 
+
+            document.write("La hora es" + ahora + "<br>")
+
+           /* console.logCopy = console.log.bind(console);
+            console.log = function(data)
+            {
+	        var d = new Date();
+	        var currentDate = '[' + d.getDate()+'/'+d.getMonth()+'-'+d.getHours()+':'+d.getMinutes()+':'+d.getSeconds()+':'+d.getMilliseconds() + '] ';
+	        this.logCopy(currentDate, data);
+            };*/
+        </script>
+        <script src="codigo.js"></script>
+</html>
